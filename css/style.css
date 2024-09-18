@@ -6,7 +6,7 @@
 body {
     
         font-family: "Quicksand";
-        background: linear-gradient(to right bottom, #ffad42, #903bff);
+        background: linear-gradient(to right bottom, #cc00ff, #ff0000);
         overflow: hidden;
         overflow-y: hidden;
         overflow-x: hidden;
@@ -33,4 +33,59 @@ body {
     display: flex;
     flex-flow:column;
     box-shadow: 0 0 5px 0 rgba(22, 22, 22, 0.1);
+}
+
+
+
+.login-title {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px;
+    border-top: 5px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 5px solid rgba(255, 255, 255, 0.1);
+}
+
+.login-title span {
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.login-form {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    min-height: 100%;
+    flex-grow: 1;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.login-form .field {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.login-form .field label {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+.login-form .field input {
+    font-family: Quicksand;
+    border: 0px;
+    padding: 20px 60px;
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgba(50, 50, 50, 0.2);
+    background: linear-gradient(to right bottom,
+            rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0.7));
+    backdrop-filter: blur(10px);
+    color: #111;
+    font-size: 16px;
 }
