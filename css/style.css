@@ -2,3 +2,35 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    
+        font-family: "Quicksand";
+        background: linear-gradient(to right bottom, #ffad42, #903bff);
+        overflow: hidden;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    
+}
+
+.login-field {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-background {
+    background: #fff;
+    min-height: 600px;
+    min-width: 400px;
+    background: linear-gradient(to right bottom,
+            rgba(255, 255, 255, 0.2),
+            rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    z-index: 5;
+    display: flex;
+    flex-flow:column;
+    box-shadow: 0 0 5px 0 rgba(22, 22, 22, 0.1);
+}
