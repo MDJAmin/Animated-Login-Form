@@ -88,4 +88,41 @@ body {
     backdrop-filter: blur(10px);
     color: #111;
     font-size: 16px;
+    transition: 1s;
+}
+
+::placeholder {
+    color: #666;
+    letter-spacing: 2px;
+  }
+
+.login-field .button-field {
+    display: flex;
+    flex-flow: column;
+}
+
+.login-form .field button {
+    font-family: Quicksand;
+    flex-grow: 1;
+    border: 0px;
+    padding: 15px 50px;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px;
+    transition: 1s;
+    box-shadow: 0 2px 5px 0 rgba(50, 50, 50, 0.2);
+    font-size: 16px;
+    border-radius: 10px;
+}
+.login-form .field button:hover {
+    transform: translateY(-3px);
+    transition: 1s;
+}
+
+.login-form .button-login {
+    background: linear-gradient(to right bottom,
+    rgb(223, 55, 153),
+    rgb(202, 44, 128));
+    color: #fff;
 }
