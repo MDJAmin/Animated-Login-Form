@@ -162,3 +162,40 @@ body {
     animation: bounce 3s infinite ease-in-out;
     background: rgb(34, 34, 34, 0.1);
 }
+
+@keyframes bounce {
+    0% {transform: translateY(0px) rotate(45deg)}
+    50% {
+        transform: translateY(20px) rotate(45deg); border-radius: 50px;
+    }
+    100% {transform: translateY(0px) rotate(45deg)}
+}
+
+.star {
+    height: 50px;
+    width: 50px;
+    display: table;
+    position: absolute;
+    box-shadow: 0 0 5px 0 rgba(34, 34, 34, 0.5);
+    transition: 0.5s;
+}
+
+.star1 {
+    bottom: -10%;
+    left: -30%;
+    transform: rotate(-30deg);
+    animation: sweep 4s infinite;
+    background: rgba(34, 34, 34, 0.5);
+}
+
+.star2 {
+    bottom: -30%;
+    left: -10%;
+    transform: rotate(-30deg);
+    animation: sweep 3s infinite;
+    background: rgb(255, 255, 255, 0.5);
+}
+
+@keyframes sweep {
+    100% {bottom: 120%; left: 120%; transform: rotate(360deg);}
+}
