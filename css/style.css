@@ -126,3 +126,39 @@ body {
     rgb(202, 44, 128));
     color: #fff;
 }
+
+.square {
+    height: 100vh;
+    width: 50vw;
+    display: table;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    transform: rotate(45deg);
+}
+
+.square.square-tl {
+    top: -80%;
+    left: -10%;
+    animation: bounce 6s infinite ease-in-out;
+    background: rgb(34, 34, 34, 0.1);
+    z-index: 50;
+}
+
+.square.square-tr {
+    top: 0%;
+    right: -30%;
+    animation: bounce 5s infinite ease-in-out;
+}
+
+.square.square-bl {
+    bottom: -70%;
+    left: -15%;
+    animation: bounce 4s infinite ease-in-out;
+}
+
+.square.square-br {
+    bottom: 0%;
+    right: -40%;
+    animation: bounce 3s infinite ease-in-out;
+    background: rgb(34, 34, 34, 0.1);
+}
