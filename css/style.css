@@ -88,9 +88,15 @@ body {
     backdrop-filter: blur(10px);
     color: #111;
     font-size: 16px;
-    transition: 1s;
+    transition: all 1s;
 }
 
+.login-form .field input:hover{
+    transform: scale(1.05);
+}
+.login-form .field input:focus{
+    transform: scale(1.05);
+}
 ::placeholder {
     color: #666;
     letter-spacing: 2px;
@@ -110,14 +116,13 @@ body {
     text-align: center;
     cursor: pointer;
     margin: 10px;
-    transition: 1s;
+    transition: all 1s;
     box-shadow: 0 2px 5px 0 rgba(50, 50, 50, 0.2);
     font-size: 16px;
     border-radius: 10px;
 }
 .login-form .field button:hover {
     transform: translateY(-3px);
-    transition: 1s;
 }
 
 .login-form .button-login {
