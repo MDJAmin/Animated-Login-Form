@@ -5,7 +5,11 @@
 
 body {
   font-family: "Quicksand";
-  background: linear-gradient(to right bottom, #cc00ff, #ff0000);
+  background: linear-gradient(
+    to right bottom,
+    #cc00ff,
+    #ff0000
+  );
   overflow: hidden;
   overflow-y: hidden;
   overflow-x: hidden;
